@@ -15,13 +15,13 @@ total_with_tax_and_tip = total_with_tax * 1.5
 
 #display the value
 print("")
-print(f"Subtotal ${subtotal}")
+print(f"Subtotal ${subtotal:.2f}")
 print("")
-print(f"The total cost of the meal with tax is: ${total_with_tax}")
+print(f"The total cost of the meal with tax is: ${total_with_tax:.2f}")
 print("")
-print(f"The total cost of the meal with tax is and tip is: ${total_with_tax_and_tip}")
+print(f"The total cost of the meal with tax is and tip is: ${total_with_tax_and_tip:.2f}")
 
 #change calculation
 payment = float(input("What is the payment amount?"))
 change = payment - total_with_tax
-print(f"The change due is: ${change}")
+print(f"The change due is: ${change:.2f}")
