@@ -8,8 +8,8 @@
 }
 
 * {
-    margin: 0;
-    padding: 0;
+    margin: 20;
+    padding: 0px;
     box-sizing: border-box;
 }
 
@@ -19,7 +19,7 @@ body{
 }
 
 header, main, footer{
-    margin: auto;
+    margin: 2px;
 }
 
 h1, h2{
@@ -28,12 +28,12 @@ h1, h2{
     margin-bottom: 10px;
     text-align: center;
     background-color: var(--color-secondary);
-    padding: 20px;
+    padding: 10px;
 }
 
 nav, p, section, article{
-    margin: auto;
-    padding: 10px;
+    margin: 20px;
+    padding: 2px;
 }
 
 .socialmedia a{
@@ -64,8 +64,8 @@ h1{
 .hero article{
     background-color: var(--color-secondary);
     background: 0.7;
-    padding: 20px;
-    margin: 20px;
+    padding: auto;
+    margin: auto;
     
 }
 
@@ -74,8 +74,3 @@ h1{
     width: 100px;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
