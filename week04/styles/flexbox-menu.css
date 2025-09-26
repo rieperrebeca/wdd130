@@ -53,3 +53,7 @@ p {
 #devtools-btn:active {
     background-color: #2a3a4a;
 }
+
+nav li{
+    flex: 1 1 100%;
+}
