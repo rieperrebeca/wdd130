@@ -1,138 +1,98 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+header, .grid, footer {
+  max-width: 840px;
+  margin: 0 auto;        /* centra el bloque en la página */
+}
+
+/* --- Base --- */
 :root{
-    --main-bg-color: #f4f4f4;
-    --main-text-color: #333;
-    --accent-color: steelblue;
-    --header-bg-color: #797979;
-    --header-text-color: white;
-    --nav-bg-color: #333;
-    --nav-text-color: white;
-    --footer-bg-color: #333;
-    --footer-text-color: white;
+  --bg-2: #f6f7fb;
+  --border: 1px solid rgb(0 0 0 / .12);
 }
-
-
-main{
-    max-width: 840px;
-}
-
 body{
-    font-size: 16px;
-    font-family: Arial, sans-serif;
+  background: var(--bg-2);
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans";
+  color: #1f2430;
 }
 
+/* --- Nav --- */
+nav{
+  background: steelblue;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav a{
+  display: block;
+  padding: .5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff; /* shorthand for white */
+}
+
+/* --- Título --- */
+h1{
+  border-bottom: 2px solid #ccc;
+  padding-bottom: .25rem;
+  margin-bottom: .75rem;
+}
+
+/* --- Imágenes --- */
+img{
+  width: 150px;
+  height: auto;
+  border: var(--border);
+  padding: 2px;
+  box-shadow: 0 0 30px gray;
+}
+main img{ float: right; margin-left: 1rem; }
+
+/* --- Layout con Grid --- */
+.grid{
+  display: grid;
+  grid-template-columns: 20rem 1fr; /* aside izquierda, main derecha */
+  align-items: start;               /* que todo arranque arriba */
+  column-gap: 1.5rem;               /* separación entre columnas */
+}
+
+/* ¡QUITAMOS centrado extra del main! */
+main{
+  /* no max-width, no margin: 0 auto; */
+  margin: 1rem 0;                   /* apenas respira dentro de su celda */
+}
+
+/* Aside en columna 1 */
 aside{
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb (0, 0, 0, 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
-    position: relative ;
+  width: 20rem;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
 }
-
 aside img{
-    width: 200px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0px 0px 30px grey;
+  width: 100%;      /* que la imagen aproveche el ancho del aside */
+  height: auto;
+  display: block;
 }
 aside h2{
-    text-align: center;
-    position: relative ;
-    top: 30px;
+  text-align: center;
+  margin: .5rem 0;
 }
 
-main img{
-    width: 150px;
-    height: auto;
-    border: 1px solid steelblue;
-    padding: 2px;
-    box-shadow: 0px 0px 30px grey;
-    float: right;
-    margin: 1rem 1rem 1rem 1rem;
-}
-
-p{ 
-    margin: 1rem ;
-}
-
-footer{
-    margin-top: 1px;
-    border-top: 1px solid #000;
-    text-align: center;
-}
-
-nav a{
-    color: white;
-    padding: 0.5rem;
-    display: block;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 1.2rem;
-    text-decoration: none;
-    font-weight: 700;
-}
-
-h1{
-    color: steelblue;
-    padding: 1rem;
-    border-bottom: #000;
-    
-}
-
-header{
-    font-family: Arial, sans-serif;
-    padding: 1rem;
-    background-color: steelblue;
-
-}
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Class Selectors */
-
+/* Caja gris reutilizable */
 .box{
-    margin: 1rem;
-    border: 1px solid rgb (0, 0, 0, 10%);
-    padding: 1rem;
-    background-color: #eee;
-    color: #000;
+  margin: 1rem 0;
+  border: 1px solid rgb(0 0 0 / 10%);
+  padding: 1rem;
+  background: #ddd;
+  color: #000;
 }
 
-.indent{
-    padding-left: 2rem;
-}
-
-.container {
-  display: flex;
-  gap: 10px; 
-}
-
-header, footer {
-      max-width: 840px;
-      margin: 0 auto;
-    }
-
-.grid {
-    display: grid;
-    align-items: center;
-}
-    
-main {
-    grid-column: 2/3;
-    margin: 1rem;
-}
-
-aside {
-    width: 20rem;
-    position: relative;
-    grid-column: 1/2;
-    grid-row: 1/2;
-    
+/* Footer */
+footer{
+  margin-top: 15px;
+  border-top: var(--border);
+  text-align: center;
+  padding: 8px 0;
 }
