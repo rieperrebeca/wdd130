@@ -2,10 +2,10 @@
 
 header, .grid, footer {
   max-width: 840px;
-  margin: 0 auto;        /* centra el bloque en la página */
+  margin: 0 auto; /*centraliza o bloco na página*/
 }
 
-/* --- Base --- */
+/*Base*/
 :root{
   --bg-2: #f6f7fb;
   --border: 1px solid rgb(0 0 0 / .12);
@@ -16,7 +16,7 @@ body{
   color: #1f2430;
 }
 
-/* --- Nav --- */
+/*Nav*/
 nav{
   background: steelblue;
   padding: 1rem;
@@ -30,17 +30,17 @@ nav a{
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #fff; /* shorthand for white */
+  color: #fff;
 }
 
-/* --- Título --- */
+/*Título*/
 h1{
   border-bottom: 2px solid #ccc;
   padding-bottom: .25rem;
   margin-bottom: .75rem;
 }
 
-/* --- Imágenes --- */
+/*Imagens*/
 img{
   width: 150px;
   height: auto;
@@ -50,28 +50,27 @@ img{
 }
 main img{ float: right; margin-left: 1rem; }
 
-/* --- Layout con Grid --- */
+/*Layout com Grid*/
 .grid{
   display: grid;
-  grid-template-columns: 20rem 1fr; /* aside izquierda, main derecha */
-  align-items: start;               /* que todo arranque arriba */
-  column-gap: 1.5rem;               /* separación entre columnas */
+  grid-template-columns: 20rem 1fr; /* aside esquerda, main direita*/
+  align-items: start;               /* tudo vem de cima*/
+  column-gap: 1.5rem;               /* separação das colunas */
 }
 
-/* ¡QUITAMOS centrado extra del main! */
 main{
   /* no max-width, no margin: 0 auto; */
-  margin: 1rem 0;                   /* apenas respira dentro de su celda */
+  margin: 1rem 0;
 }
 
-/* Aside en columna 1 */
+/* Aside en coluna 1 */
 aside{
   width: 20rem;
   grid-column: 1 / 2;
   grid-row: 1 / 2;
 }
 aside img{
-  width: 100%;      /* que la imagen aproveche el ancho del aside */
+  width: 100%; 
   height: auto;
   display: block;
 }
@@ -80,7 +79,7 @@ aside h2{
   margin: .5rem 0;
 }
 
-/* Caja gris reutilizable */
+/* caixa gris reutilizavel */
 .box{
   margin: 1rem 0;
   border: 1px solid rgb(0 0 0 / 10%);
