@@ -170,7 +170,6 @@ footer {
 	justify-content: center;
 	align-items: center;
 	padding: 1rem;
-    background-color: #fff;
     max-width: 500px;
 }
 
@@ -187,5 +186,5 @@ footer {
     padding: 2rem;
     margin: 4rem;
 	grid-template-columns: repeat(2, 1fr); 
-    background-color: #fff;
+    background-color: var(--secondary-color);
 }
