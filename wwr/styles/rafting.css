@@ -209,3 +209,8 @@ button{
     padding: 16px;
     text-align: center;
 }
+
+map{
+    width: 500px;
+    height: 500px;
+}
