@@ -188,3 +188,14 @@ footer {
 	grid-template-columns: repeat(2, 1fr); 
     background-color: var(--secondary-color);
 }
+button{
+    width: 100%;
+	padding: 0.5rem 1rem;
+	background-color: var(--primary-color);
+	color: var(--accents1-color);
+	font-size: 1.1rem;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: .3s;
+}
