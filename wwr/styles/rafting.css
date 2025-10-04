@@ -48,7 +48,7 @@ header {
     width: 100%;
     height: auto;
 }
-h1 {
+.h1-about {
     position: absolute;
     top: 20px;
     width: 100%;
@@ -200,4 +200,12 @@ button{
 	transition: .3s;
     border-radius: 6px;
     margin-top: 1rem;
+}
+
+.content-contact{
+    position: center;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
 }
