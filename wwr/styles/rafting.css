@@ -364,36 +364,37 @@ img.trip-image  {
 }
 .rafting-grid {
     display: grid;
-    gap: 1.5rem;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    align-items: start;
-    background: #f4f9fc;
-    padding: 1.5rem;
-    border-radius: 12px;
+    padding: 1rem;
+    border-radius: 6px;
     max-width: 1000px;
     margin: 2rem auto;
-    font-family: Arial, sans-serif;
+    justify-content: center;
 }
 .rafting-grid img {
     width: 100%;
     height: 200px;
     object-fit: cover;
     border-radius: 10px;
+    justify-content: center;
 }
 .image-card {
+    display: grid;
     background: #fff;
-    border-radius: 10px;
+    border-radius: 6px;
     padding: 1rem;
     box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
 }
 .image-card h3 {
-    margin: 0.75rem 0 0.25rem;
-    color: var();
+    margin: 1rem;
+    justify-content: center;
 }
 .rafting-grid p {
     margin: 0.25rem 0;
     color: #444;
     line-height: 1.4;
+    justify-content: center;
 }
 .intro {
     grid-column: 1 / -1;
