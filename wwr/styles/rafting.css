@@ -159,50 +159,247 @@ footer {
     height: auto;
     transition: transform 0.3s ease;
 }
+
 .socialmedia a img:hover {
     transform: scale(1.1);
 }
 
-.container{
-	justify-content: center;
-	align-items: center;
+/*contact*/
+
+.trips-page h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    background-color: black;
+    color: white;
+    padding: 16px 0;
+}
+
+.map-form {
+    display: flex;
+    gap: 30px;
+    align: center;
+}
+
+form {
+    display: flex;
+    width: 340px;
+    padding: 1rem;
+    border-radius: 0.6rem;
+    background-color: #eee;
+    display: grid;
+    align-items: center;       
+    justify-content: center;
+}
+
+button{
 	padding: 1rem;
     border-radius: 6px;
-}
-
-.contact-box{
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	justify-content: center;
-	align-items: center;
-	text-align: left;
-    border-radius: 6px;
-}
-
-.map-form{
-    display: grid;
-    padding: 2rem;
-    margin: 4rem;
-	grid-template-columns: repeat(2, 1fr); 
-    background-color: var(--secondary-color);
-    border-radius: 6px;
-}
-button{
-	padding: 1rem 4rem;
-	background-color: var(--primary-color);
-	color: var(--accents1-color);
-	font-size: 1.1rem;
-	border: none;
-	outline: none;
-	cursor: pointer;
-	transition: .3s;
-    border-radius: 6px;
     margin-top: 1rem;
+    background-color: var(--secondary-color);
 }
 
-.content-contact{
+button:hover {
+  background-color: var(--accents1-color);
+  color: var(--primary-color);
+}
+
+/*Trip Page*/
+
+.trips-page h1 {
+    text-align: center;
+    margin-bottom: 24px;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 16px 0;
+}
+.trips-page h2 a {
+  text-decoration: none;
+  text-align: center;
+  background-color: blue;
+  color:white;
+  border: none;
+  padding: 10px;
+  border-radius: 9px;
+  margin-top: 10px;
+  width: 100%;
+}
+.trips-page h2 {
+    text-align: center;
+    margin-top: 56px;
+    margin-bottom: 32px;
+}
+.trips-page section p {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid var(--accents1-color);
+    background: #f4f9fc;
+    border-radius: 6px;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+.trips2 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 1px solid var(--accents1-color);
+    background: #f4f9fc;
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 2rem auto;
+}
+
+section
+.trips2 section {
+    flex-direction: row;
+    border: 1px solid var(--accents1-color)
+}
+.trip-profiles {
+    display: flex;
+    flex-direction: row;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+img.trip-image  {
+    max-width: 90%;
+}
+.trip-title {
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+.trip-figure figcaption{
+    text-align: center;
+    margin-top: 8px;
+    max-width: 200px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.trips-page table {
+    width: 60%;
+    border-collapse: collapse;
+    margin-bottom: 24px;
+}
+.trips-page th, .trips-page td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: left;
+}
+.trips-page th {
+    background-color: #eee;
+}
+.trips-page figure {
+    text-align: center;
+    width: auto;
+}
+.trips-page caption {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+/*Index**/
+
+.home-page h1 { 
+    position: absolute;
     top: 20px;
     width: 100%;
     padding: 16px;
     text-align: center;
+    background-color: var(--secondary-color);
+    color: #fff
+}
+.home-page article {
+    background-color: #000000b8;
+    color: #fff;
+    position: absolute;
+    bottom: 0%;
+    padding: 24px;
+
+}
+.home-newsletter {
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    padding: 1rem;
+}
+.home-newsletter h2 {
+    margin-bottom: 20px;;
+}
+
+.home-adventure {
+    text-align: center;
+    margin-bottom: 20px;
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background: #f4f9fc;
+}
+.home-adventure h2 {
+    margin-bottom: 16px;
+    color: var(--primary-color);
+}
+.home-adventure a {
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    color: white;
+    border: 1px;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 9px;
+    font-weight: bold;
+}
+.home-adventure a:hover {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+.home-page .contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.rafting-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    align-items: start;
+    background: #f4f9fc;
+    padding: 1.5rem;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin: 2rem auto;
+    font-family: Arial, sans-serif;
+}
+.rafting-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.image-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+.image-card h3 {
+    margin: 0.75rem 0 0.25rem;
+    color: var();
+}
+.rafting-grid p {
+    margin: 0.25rem 0;
+    color: #444;
+    line-height: 1.4;
+}
+.intro {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+.intro h2 {
+    color: var(--secondary-color);
+    margin-bottom: 0.5rem;
 }
